@@ -3,67 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Store</title>
+    <title>EliteTech Corporation</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo">Example Store</div>
-            <ul class="nav-links">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="EliteTech Logo"></a>
+        </div>
+        <nav class="navigation">
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="cart-button">Cart</button>
         </nav>
+        <div class="cta">
+            <a href="#contact" class="btn-contact">Let's Talk</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero-section">
+        <div class="overlay"></div>
         <div class="hero-content">
-            <h1>Welcome to Example Store</h1>
-            <p>Find the best products for your needs</p>
-            <button class="shop-now-btn">Shop Now</button>
+            <h1>Innovating Tomorrow, Today</h1>
+            <p>EliteTech Corporation – Shaping the Future of Software, AI, and Web Development</p>
+            <a href="#services" class="btn-primary">Discover Our Services</a>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products-section">
-        <h2>Featured Products</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$499.99</p>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Expertise</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="software-development.jpg" alt="Software Development">
+                <h3>Software Development</h3>
+                <p>We build custom software solutions for modern businesses using cutting-edge technology.</p>
             </div>
-            <div class="product">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$599.99</p>
+            <div class="service">
+                <img src="ai.jpg" alt="AI">
+                <h3>Artificial Intelligence</h3>
+                <p>Our AI solutions revolutionize industries, making automation smarter and more efficient.</p>
             </div>
-            <div class="product">
-                <img src="product3.jpg" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>$699.99</p>
+            <div class="service">
+                <img src="web-design.jpg" alt="Web Design">
+                <h3>Web Design & Development</h3>
+                <p>We craft stunning, user-friendly websites that drive engagement and conversions.</p>
+            </div>
+            <div class="service">
+                <img src="business-management.jpg" alt="Business Management">
+                <h3>Business Management</h3>
+                <p>Our expertise in business consulting ensures your company's operations run seamlessly.</p>
+            </div>
+            <div class="service">
+                <img src="investment.jpg" alt="Investment">
+                <h3>Investment Strategies</h3>
+                <p>We offer strategic investment advice, ensuring your financial growth and security.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Recent Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>AI-powered Business Solutions</h3>
+                <p>Transforming corporate decision-making through advanced AI algorithms.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Luxury E-Commerce Platform</h3>
+                <p>A seamless web experience designed for a high-end luxury fashion brand.</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>FinTech Investment Platform</h3>
+                <p>Empowering users with intelligent, automated investment strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About EliteTech</h2>
+        <p>Founded in 2005, EliteTech Corporation has grown into a global leader in software, AI, and web development. We believe in driving innovation with a focus on quality, efficiency, and sustainability. Our mission is to empower businesses through technological excellence.</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Example Store. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+            <div class="footer-logo">
+                <img src="logo.png" alt="EliteTech Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
         </div>
+        <p>&copy; 2024 EliteTech Corporation. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
