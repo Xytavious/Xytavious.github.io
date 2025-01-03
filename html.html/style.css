@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;/*font of text*/
+}
+
+body {/*background color and image*/
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://www.adobe.com/creativecloud/photography/discover/media_131179edca5f92db203e2b78cb8a308605afbc958.png?width=750&format=png&optimize=medium');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+/*changes to the text*/
+a{
+    text-decoration: none;/*removes the line from under the links*/
+    color: #fff; /*changes text color*/
+    font-size: 1rem;/* changes the size of the font*/
+}
+
+/*when the cursor hovers over the text the color changes*/
+a:hover{
+    color: orange;
+}
+/* header*/
+header{
+    position: relative;
+    padding: 0 2rem;/*tabs the text of the header*/
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
