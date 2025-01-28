@@ -7,7 +7,9 @@
 
 body {/*background color and image*/
     height: 100vh;
-    background-color: #000;
+    
+    background-color:  #011d0c;
+    background-image: linear-gradient(80deg, #011d0c, white,#011d0c); //
     background-image: url('https://www.adobe.com/creativecloud/photography/discover/media_131179edca5f92db203e2b78cb8a308605afbc958.png?width=750&format=png&optimize=medium');
     background-size: cover;
     background-position: center;
@@ -35,6 +37,7 @@ header{
 }
 
 .navbar{
+  
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -138,3 +141,56 @@ header{
     width: 50%;
     top: 50%;
   }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    width: auto;
+    padding: 0.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .fade {
+    animation: fadeEffect 1s;
+  }
+  
+  @keyframes fadeEffect {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
