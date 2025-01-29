@@ -9,7 +9,7 @@ body {/*background color and image*/
     height: 100vh;
     
     background-color:  #011d0c;
-    background-image: linear-gradient(80deg, #011d0c, white,#011d0c); //
+    background-image: linear-gradient(40deg, #011d0c, white,#011d0c, #011d0c); //          
     background-image: url('https://www.adobe.com/creativecloud/photography/discover/media_131179edca5f92db203e2b78cb8a308605afbc958.png?width=750&format=png&optimize=medium');
     background-size: cover;
     background-position: center;
@@ -39,6 +39,11 @@ header{
 .navbar{
   
     width: 100%;
+    padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    top: 0; /* At the top */
+    z-index: 99;
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
