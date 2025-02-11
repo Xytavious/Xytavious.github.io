@@ -39,6 +39,33 @@ a{
 a:hover{
     color: orange;
 }
+
+/* off screen menu
+.off-screen-menu{
+  background-color: #9c6828ee;
+  height: 100vh;
+  width: 300px;
+  max-width: 300px;
+  position: fixed;
+  top:0;
+  left: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  color:white    ;
+  transition: .03 ease-in;
+}
+.off-screen-menu.active{
+  left: 0;
+}
+
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%,-50%)rotate(45deg);
+}
+*/
+
 /* header*/
 header{
     position: relative;
@@ -100,7 +127,7 @@ header{
 }
 
 /* From Uiverse.io by tarantino421 */ 
-.buttons__burger {
+.hamburger {
     --size: 3rem;
     --clr: #000;
     width: var(--size);
@@ -110,13 +137,14 @@ header{
     display: block;
   }
   
-  .buttons__burger #burger {
+  .hamburger #burger {
     display: none;
     width: 100%;
     height: 100%;
   }
   
-  .buttons__burger span {
+  
+  .hamburger span {
     display: block;
     position: absolute;
     width: 100%;
@@ -126,35 +154,38 @@ header{
     transition: 0.15s ease-in-out;
   }
   
-  .buttons__burger span:nth-of-type(1) {
+  .hamburger span:nth-of-type(1) {
     top: 0;
     right: 0;
     transform-origin: right center;
   }
   
-  .buttons__burger span:nth-of-type(2) {
+  .hamburger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
   }
   
-  .buttons__burger span:nth-of-type(3) {
+  .hamburger span:nth-of-type(3) {
     top: 100%;
     right: 0;
     transform-origin: right center;
     transform: translateY(-100%);
   }
   
-  .buttons__burger #burger:checked ~ span:nth-of-type(1) {
+  .hamburger #burger:checked ~ span:nth-of-type(1) {
     transform: translateY(-30%) rotate(40deg);
     width: 50%;
     top: 50%;
   }
   
-  .buttons__burger #burger:checked ~ span:nth-of-type(3) {
+  .hamburger #burger:checked ~ span:nth-of-type(3) {
     transform: translateY(-70%) rotate(-40deg);
     width: 50%;
     top: 50%;
   }
+
+
+
 
   .slideshow-container {
     position: relative;
@@ -208,3 +239,152 @@ header{
     }
   }
   
+
+/*burger*/
+.menu-container {
+
+  position: relative;
+
+}
+
+
+
+.hamburger {
+
+  position: fixed;
+
+  top: 20px;
+
+  left: 20px;
+
+  width: 40px;
+
+  height: 40px;
+
+  background: transparent;
+
+  border: none;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  z-index: 1000;
+
+}
+
+
+
+.bar {
+
+  width: 35px;
+
+  height: 5px;
+
+  background-color: black;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+}
+
+
+
+/* Transform to an arrow when active */
+
+.hamburger.active .bar:nth-child(1) {
+
+  transform: rotate(45deg) translate(6px, 6px);
+
+}
+
+
+
+.hamburger.active .bar:nth-child(2) {
+
+  opacity: 0;
+
+}
+
+
+
+.hamburger.active .bar:nth-child(3) {
+
+  transform: rotate(-45deg) translate(6px, -6px);
+
+}
+
+
+
+/* Side Menu */
+
+.side-menu {
+
+  position: fixed;
+
+  top: 0;
+
+  left: -250px;
+
+  width: 250px;
+
+  height: 100%;
+
+  background-color: #333;
+
+  padding-top: 60px;
+
+  transition: left 0.3s ease-in-out;
+
+}
+
+
+
+.side-menu ul {
+
+  list-style: none;
+
+  padding: 0;
+
+}
+
+
+
+.side-menu ul li {
+
+  padding: 15px;
+
+  text-align: center;
+
+}
+
+
+
+.side-menu ul li a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+}
+
+
+
+.side-menu ul li a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+
+.side-menu.open {
+
+  left: 0;
+
+}
