@@ -69,19 +69,21 @@ a:hover{
 /* header*/
 header{
     position: relative;
-    padding: 0 2rem;/*tabs the text of the header*/
+    width: 100vw !important;
+    padding: 0 rem;/*tabs the text of the header*/
 }
 
 .navbar{
   
     width: 100%;
-    padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+    background-color: #b1cabc;
+    padding: 30px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
     top: 0; /* At the top */
     z-index: 99;
     height: 60px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -127,7 +129,7 @@ header{
 }
 
 /* From Uiverse.io by tarantino421 */ 
-.hamburger {
+/*.hamburger {
     --size: 3rem;
     --clr: #000;
     width: var(--size);
@@ -184,13 +186,13 @@ header{
     top: 50%;
   }
 
-
+*/
 
 
   .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
+    position: fixed;
+    width: 100%;
+    margin: fixed;
     overflow: hidden;
   }
   
@@ -296,7 +298,6 @@ header{
 /* Transform to an arrow when active */
 
 .hamburger.active .bar:nth-child(1) {
-
   transform: rotate(45deg) translate(6px, 6px);
 
 }
@@ -333,15 +334,13 @@ header{
 
   height: 100%;
 
-  background-color: #333;
+  background-color: #A96B1E;
 
   padding-top: 60px;
 
   transition: left 0.3s ease-in-out;
 
 }
-
-
 
 .side-menu ul {
 
@@ -351,17 +350,13 @@ header{
 
 }
 
-
-
 .side-menu ul li {
 
   padding: 15px;
 
-  text-align: center;
+  text-align: left;
 
 }
-
-
 
 .side-menu ul li a {
 
@@ -373,15 +368,11 @@ header{
 
 }
 
-
-
 .side-menu ul li a:hover {
 
   text-decoration: underline;
 
 }
-
-
 
 .side-menu.open {
 
